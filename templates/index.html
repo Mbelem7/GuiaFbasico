@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de María Belén Guevara Ochoa, estudiante de Ingeniería en Sistemas.">
+    <title>Portafolio | María Belén Guevara</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/styles/styles.css">
+</head>
+<body>
+
+    <!-- Forma de estrella reutilizable -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="estrella" viewBox="0 0 100 100">
+            <path d="M50 0 C52 40 60 48 100 50 C60 52 52 60 50 100 C48 60 40 52 0 50 C40 48 48 40 50 0Z"/>
+        </symbol>
+    </svg>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="#inicio" class="activo">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#pasatiempos">Pasatiempos</a></li>
+            <li><a href="#educacion">Educación</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== INICIO ===== -->
+    <header id="inicio">
+        <svg class="estrella" style="top:9rem;left:3%;width:150px;height:200px" aria-hidden="true"><use href="#estrella"/></svg>
+        <svg class="estrella" style="top:6rem;right:6%;width:130px;height:170px" aria-hidden="true"><use href="#estrella"/></svg>
+        <svg class="estrella ocultar-movil" style="bottom:2rem;left:12%;width:150px;height:190px" aria-hidden="true"><use href="#estrella"/></svg>
+        <svg class="estrella ocultar-movil" style="bottom:4rem;right:-2%;width:160px;height:230px" aria-hidden="true"><use href="#estrella"/></svg>
+
+        <p class="titulo-portada">Portafolio</p>
+        <img class="avatar" src="../static/assets/img/avatar.png" alt="Ilustración de María Belén con lentes verdes">
+        <p class="bienvenido">&lt;BIENVENIDO/&gt;</p>
+    </header>
+
+    <main>
+        <!-- ===== SOBRE MÍ ===== -->
+        <section id="sobre-mi">
+            <svg class="estrella" style="top:24rem;left:-30px;width:110px;height:170px" aria-hidden="true"><use href="#estrella"/></svg>
+            <svg class="estrella ocultar-movil" style="bottom:-40px;right:3%;width:90px;height:140px" aria-hidden="true"><use href="#estrella"/></svg>
+
+            <div class="contenedor sobre-grid">
+                <div>
+                    <h2 class="hola">¡¡Hola!!</h2>
+                    <div class="marco-foto">
+                        <img src="../static/assets/img/foto-belen.png" alt="Fotografía de María Belén Guevara">
+                    </div>
+
+                    <div class="contactos">
+                        <h3>Contactos</h3>
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                                <a href="mailto:belengueochoa@gmail.com">belengueochoa@gmail.com</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                                <a href="tel:+50584503403">8450-3403</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+                                <a href="../static/assets/docs/CV-Maria-Belen-Guevara.pdf" download>Clic aquí para descargar mi CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Encabezado principal con mi nombre -->
+                    <h1 class="nombre">María Belén Guevara</h1>
+                    <p class="presentacion">
+                        Estudiante de quinto año de Ingeniería en Sistemas, con creatividad y entusiasmo
+                        por el aprendizaje continuo. He participado en proyectos académicos y actividades
+                        que han fortalecido mis habilidades técnicas y de trabajo en equipo. Comprometida
+                        con seguir desarrollándome para aportar al sector tecnológico.
+                    </p>
+
+                    <h2 class="habilidades-titulo">Habilidades</h2>
+                    <ul class="iconos">
+                        <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/canva/canva-original.svg" alt="Canva" title="Canva"></li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="Python" title="Python"></li>
+                        <li><img class="figma" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/figma/figma-original.svg" alt="Figma" title="Figma"></li>
+                        <li><img src="../static/assets/img/microsoft.png" alt="Microsoft 365" title="Microsoft 365" data-opcional></li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" alt="HTML5" title="HTML5"></li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" alt="CSS3" title="CSS3"></li>
+                        <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"></li>
+                    </ul>
+
+                    <div class="tarjetas">
+                        <div class="tarjeta">
+                            <h3>Habilidades técnicas</h3>
+                            <ul>
+                                <li>Diseño de interacciones (UX)</li>
+                                <li>Diseño de interfaz de usuario (UI)</li>
+                                <li>Figma</li>
+                                <li>SQL Server</li>
+                                <li>Python</li>
+                                <li>Lenguaje C</li>
+                                <li>Microsoft 365</li>
+                                <li>HTML &amp; CSS</li>
+                            </ul>
+                        </div>
+                        <div class="tarjeta">
+                            <h3>Habilidades blandas</h3>
+                            <ul>
+                                <li>Trabajo en equipo</li>
+                                <li>Pensamiento creativo</li>
+                                <li>Comunicación asertiva</li>
+                                <li>Atención al detalle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EDUCACIÓN ===== -->
+        <section id="educacion">
+            <svg class="estrella" style="top:-20px;right:4%;width:110px;height:170px" aria-hidden="true"><use href="#estrella"/></svg>
+
+            <div class="contenedor">
+                <h2>Educación</h2>
+                <div class="carrera">
+                    <img src="../static/assets/img/logo-uni.png" alt="Logo de la Universidad Nacional de Ingeniería" data-opcional>
+                    <p>Carrera | Ingeniería de Sistemas<br>Universidad Nacional de Ingeniería. Enero 2022 - actualmente</p>
+                </div>
+
+                <div class="galeria-grid">
+                    <div id="galeria">
+                        <h3>Diplomas, certificados y reconocimientos</h3>
+                        <ul class="diplomas">
+                            <li><a href="../static/assets/img/udemy-figma.jpg" target="_blank"><img src="../static/assets/img/udemy-figma.jpg" alt="Certificado de Udemy: Figma UI UX Design Essentials, 2026"></a></li>
+                            <li><a href="../static/assets/img/cs50-harvard.jpg" target="_blank"><img src="../static/assets/img/cs50-harvard.jpg" alt="Certificado CS50x de la Universidad de Harvard, 2024"></a></li>
+                            <li><a href="../static/assets/img/certificado-cnit.jpg" target="_blank"><img src="../static/assets/img/certificado-cnit.jpg" alt="Certificado del curso Desarrollo de proyectos tecnológicos con marcos de trabajo, 2024"></a></li>
+                            <li><a href="../static/assets/img/hackathon-entornos-2024.jpg" target="_blank"><img src="../static/assets/img/hackathon-entornos-2024.jpg" alt="Reconocimiento por participar en Hackathon Nicaragua EntornOS 2024"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="participaciones">
+                        <h3>Participaciones:</h3>
+                        <ul>
+                            <li>Hackathon Nicaragua 2024 | Área de diseño · Centro Nacional de Innovación y Tecnología Francisco "El Chele" Moreno · Festival Tecnológico "EntornOS", Categoría Libre en Startup</li>
+                            <li>Tercer Rally Latinoamericano · Nicaragua Innova 2025 | Área de marketing · Universidad Nacional de Ingeniería, recinto RUSB</li>
+                            <li>Índice Nicaragua 2025 | Ensayo científico · VI Festival Nacional de Investigación y Publicaciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROYECTOS ===== -->
+        <section id="proyectos" class="extra">
+            <div class="contenedor extra-grid">
+                <div>
+                    <h2>Proyectos</h2>
+                    <ul>
+                        <li>RRHH · Diseño web (2023)</li>
+                        <li>Cordobapp · Diseño web y móvil (2024)</li>
+                        <li>Pinolero Trip · Diseño UI/UX (2025)</li>
+                        <li>Pinolero Trip · Manual de identidad corporativa (2025)</li>
+                        <li>Servi Contable · Manual de identidad corporativa (2026)</li>
+                        <li>RIVASA · Portafolio corporativo (2026)</li>
+                    </ul>
+                    <p>Puedes ver mis proyectos en <a href="https://linktr.ee/mariagueochoa" target="_blank" rel="noopener">linktr.ee/mariagueochoa</a></p>
+                </div>
+
+                <!-- ===== PASATIEMPOS ===== -->
+                <div id="pasatiempos">
+                    <h2>Pasatiempos</h2>
+                    <ul>
+                        <li>Arte: pintura y dibujo</li>
+                        <li>Manualidades</li>
+                        <li>Mi emprendimiento: The Marias Store</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer>
+        <svg class="estrella" style="bottom:-50px;left:-20px;width:110px;height:170px" aria-hidden="true"><use href="#estrella"/></svg>
+        <div class="contenedor">
+            <h4>Redes:</h4>
+            <ul class="redes">
+                <li><a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-guevara-ochoa-28a70327b" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/linkedin/linkedin-original.svg" alt="">María Belén Guevara Ochoa</a></li>
+                <li><a href="mailto:belengueochoa@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="#EEF5A0" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>belengueochoa@gmail.com</a></li>
+                <li><a href="https://github.com/Mbelem7" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/github/EEF5A0" alt="">Mbelem7</a></li>
+                <li><a href="https://www.instagram.com/__.littlefrog" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/instagram/EEF5A0" alt="">__.littlefrog</a></li>
+            </ul>
+            <h5>Diseño de sistemas en Internet · Guía semana 11</h5>
+            <h6>&copy;2026 María Belén Guevara, todos los derechos reservados.</h6>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

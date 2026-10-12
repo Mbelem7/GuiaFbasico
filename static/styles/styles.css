@@ -1,0 +1,224 @@
+/* ==========================================
+   Portafolio - María Belén Guevara
+   Hoja de estilos principal
+   ========================================== */
+
+:root {
+    --verde-oscuro: #1F3A12;
+    --verde: #4E7A2A;
+    --verde-medio: #8FA858;
+    --verde-claro: #B9CF7D;
+    --amarillo: #EEF5A0;
+    --amarillo-suave: #E6F09F;
+    --rosa: #F2A9C9;
+    --blanco: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    color: var(--verde-oscuro);
+    background: var(--verde-oscuro);
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+
+.contenedor { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; position: relative; }
+
+/* ---------- Estrellas decorativas ---------- */
+.estrella { position: absolute; fill: var(--rosa); pointer-events: none; z-index: 0; }
+
+/* ---------- Menú ---------- */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem 1.5rem;
+}
+nav ul {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: .3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: var(--blanco);
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(31, 58, 18, .18);
+}
+nav li { flex: 1; }
+nav a {
+    display: block;
+    text-align: center;
+    padding: .65rem .5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .95rem;
+    color: var(--verde-oscuro);
+}
+nav a:hover, nav a.activo { background: var(--amarillo); }
+
+/* ---------- Inicio (portada) ---------- */
+/* ---------- Inicio (portada) ---------- */
+#inicio {
+    position: relative;
+    overflow: hidden;
+    margin-top: -5rem;
+    padding: 7rem 0 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, var(--verde) 0%, #7FA043 45%, var(--amarillo) 100%);
+}
+#inicio .titulo-portada {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: clamp(3rem, 9vw, 5.5rem);
+    font-weight: 700;
+    color: var(--blanco);
+    letter-spacing: -.01em;
+    line-height: 1.2;
+}
+#inicio .avatar {
+    position: relative;
+    z-index: 1;
+    width: min(340px, 75vw);
+    margin: .5rem auto 1.5rem;
+}
+#inicio .bienvenido {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: .04em;
+    color: var(--verde-oscuro);
+}
+/* ---------- Sobre mí ---------- */
+#sobre-mi {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0 3rem;
+    background: var(--amarillo-suave);
+}
+.sobre-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+.hola {
+    margin: 0 0 .5rem;
+    font-size: clamp(3.2rem, 7vw, 4.6rem);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--verde);
+}
+.marco-foto {
+    margin-top: 4.5rem;
+    height: 270px;
+    background: var(--verde);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(31, 58, 18, .25);
+    position: relative;
+}
+.marco-foto img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    max-height: 360px;
+    object-fit: contain;
+    object-position: bottom;
+}
+.contactos { margin-top: 1.5rem; padding-left: 1.5rem; }
+.contactos h3 { margin: 0 0 .6rem; font-size: 1rem; color: var(--verde); }
+.contactos ul { list-style: none; margin: 0; padding: 0; }
+.contactos li { display: flex; align-items: center; gap: .6rem; margin-bottom: .55rem; font-weight: 600; font-size: .95rem; }
+.contactos svg { width: 22px; height: 22px; flex-shrink: 0; fill: none; stroke: var(--verde-oscuro); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.nombre { margin: 0 0 .8rem; font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.1; }
+.presentacion { margin: 0 0 1.5rem; line-height: 1.7; font-weight: 600; text-align: justify; color: #3E5A22; }
+
+.habilidades-titulo { margin: 0 0 .8rem; font-size: clamp(2rem, 4.5vw, 2.6rem); font-weight: 700; color: var(--verde-claro); }
+.iconos { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0 0 1.75rem; padding: 0; list-style: none; }
+.iconos li { width: 46px; height: 46px; display: grid; place-items: center; }
+.iconos img { width: 42px; height: 42px; }
+.iconos .figma { background: #1E1E1E; border-radius: 10px; padding: 8px; }
+
+.tarjetas { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.tarjeta h3 { margin: 0 0 .5rem; text-align: center; font-size: 1rem; color: var(--verde); }
+.tarjeta ul {
+    margin: 0;
+    padding: 1rem 1rem 1rem 2rem;
+    min-height: 210px;
+    background: var(--verde-medio);
+    color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(31, 58, 18, .2);
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.9;
+}
+
+/* ---------- Educación y galería ---------- */
+#educacion {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0 4rem;
+    background: linear-gradient(180deg, var(--amarillo-suave) 0%, #8FB053 30%, var(--verde) 65%);
+}
+#educacion h2 { position: relative; z-index: 1; margin: 0 0 1rem; font-size: 2.4rem; font-weight: 700; }
+.carrera { position: relative; z-index: 1; display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem; }
+.carrera img { width: 70px; }
+.carrera p { margin: 0; font-weight: 600; line-height: 1.6; color: var(--verde); }
+
+.galeria-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; }
+#galeria h3, .participaciones h3 { margin: 0 0 1.2rem; font-size: 1.3rem; color: var(--verde); }
+.diplomas { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 0; padding: 0; list-style: none; }
+.diplomas a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 6px 16px rgba(31, 58, 18, .3); transition: transform .2s; }
+.diplomas a:hover { transform: scale(1.03); }
+.participaciones h3 { color: var(--blanco); }
+.participaciones ul { margin: 0; padding: 0; list-style: none; }
+.participaciones li { margin-bottom: 1.3rem; color: var(--blanco); font-weight: 600; line-height: 1.7; font-size: .95rem; text-shadow: 0 1px 2px rgba(31,58,18,.35); }
+
+/* ---------- Proyectos y pasatiempos ---------- */
+.extra { padding: 3.5rem 0; background: var(--verde); color: var(--amarillo); }
+.extra h2 { margin: 0 0 1.25rem; font-size: 2.2rem; color: var(--blanco); }
+.extra-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; }
+.extra ul { margin: 0; padding-left: 1.2rem; line-height: 2; font-weight: 600; }
+.extra p { font-weight: 600; }
+.extra a { color: var(--blanco); }
+
+/* ---------- Pie de página ---------- */
+footer { position: relative; overflow: hidden; padding: 2rem 0 1.5rem; background: var(--verde-oscuro); color: var(--amarillo); }
+footer h4 { position: relative; z-index: 1; margin: 0 0 .9rem; font-size: 1rem; }
+.redes { position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem 2.5rem; margin: 0 0 1.5rem; padding: 0; list-style: none; }
+.redes a { display: flex; align-items: center; gap: .5rem; text-decoration: none; font-weight: 600; font-size: .9rem; }
+.redes a:hover { text-decoration: underline; }
+.redes img, .redes svg { width: 24px; height: 24px; }
+footer h5 { position: relative; z-index: 1; margin: 0 0 .4rem; text-align: center; font-size: .85rem; font-weight: 600; }
+footer h6 { position: relative; z-index: 1; margin: 0; text-align: center; font-size: .8rem; font-weight: 400; }
+
+/* ---------- Celular ---------- */
+@media (max-width: 760px) {
+    nav { padding: .6rem; }
+    nav a { font-size: .75rem; padding: .55rem .2rem; }
+    .sobre-grid, .galeria-grid, .extra-grid, .tarjetas { grid-template-columns: 1fr; }
+    .marco-foto { margin-top: 3.5rem; max-width: 300px; }
+    .estrella.ocultar-movil { display: none; }
+    .presentacion { text-align: left; }
+    .tarjeta ul { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .diplomas a { transition: none; }
+}
