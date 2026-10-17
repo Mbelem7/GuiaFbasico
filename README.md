@@ -93,4 +93,4 @@ GuiaFbasico/
 
 ---
 
-💚 Hecho por **María Belén Guevara** · 2026
+Hecho por **María Belén Guevara** ⭐🐙· 2026
